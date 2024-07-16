@@ -8,7 +8,7 @@ import { WhyUsBlock } from './components/why-us'
 export default function Home() {
   return (
     <main className='max-w-4xl mx-auto'>
-      <section className='min-h-screen flex flex-col justify-center mb-xl max-w-2xl mx-auto gap-24 pb-36'>
+      <section className='min-h-screen flex flex-col justify-center mb-xl max-w-lg mx-auto gap-24 pb-36'>
         <Image src={logo} width={30} height={30} alt="Studio's logo" />
         <div className='max-w-lg'>
           <h1 className='text-3xl font-display leading-tight text-neutral-400 font-medium'>
