@@ -6,7 +6,7 @@ import Link from 'next/link'
 interface TextSegment {
   text: string
   isLink?: boolean
-  href?: URL
+  href?: string
 }
 
 const AnimatedText = ({
@@ -48,7 +48,7 @@ const Word = ({
   wordIndex: number
   totalWords: number
   isLink?: boolean
-  href?: URL
+  href?: string
 }) => {
   const container = useRef(null)
   const { scrollYProgress } = useScroll({
@@ -79,9 +79,9 @@ const Word = ({
       style={{ display: 'inline-block', marginRight: '0.25em' }}
     >
       {isLink && href ? (
-        <Link href={href} className='hover:underline'>
+        <a href={href} className='hover:underline'>
           {content}
-        </Link>
+        </a>
       ) : (
         content
       )}
@@ -124,7 +124,7 @@ export const WhyUsBlock = () => {
       {
         text: "So, let's talk about your project ↘",
         isLink: true,
-        href: new URL('#'),
+        href: '#',
       },
     ],
   ]
