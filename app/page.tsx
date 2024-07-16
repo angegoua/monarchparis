@@ -14,7 +14,7 @@ export default function Home() {
             We help founders and early-stage startup crafting{' '}
             <span className='text-black'>irresistible</span> products
           </h1>
-          <p className='my-6 text-neutral-700 max-w-md'>
+          <p className='my-6 text-neutral-500 max-w-md'>
             From clarify your strategy, to develivering memorables digital
             experiences that activate and retain your users.
           </p>

@@ -28,7 +28,7 @@ export const StrengthsBlock = () => {
         <div className='w-1/2'>
           <HeaderIcon className='block' />
           <h3 className='text-lg font-display font-medium mt-2 mb-4'>design</h3>
-          <p className='text-neutral-700 text-sm'>
+          <p className='text-neutral-500 text-sm'>
             we know how to sketch for you intuitive, engaging interfaces that
             evolve with your users needs and market trends.
           </p>
@@ -36,7 +36,7 @@ export const StrengthsBlock = () => {
             {designDomains.map((domain, index) => (
               <li key={index} className='flex items-center mr-2'>
                 <ListIcon className='mr-1' />
-                <span className='text-neutral-700 text-sm'>{domain}</span>
+                <span className='text-neutral-500 text-sm'>{domain}</span>
               </li>
             ))}
           </ul>
@@ -46,7 +46,7 @@ export const StrengthsBlock = () => {
           <h3 className='text-lg font-display font-medium mt-2 mb-4'>
             technology
           </h3>
-          <p className='text-neutral-700 text-sm'>
+          <p className='text-neutral-500 text-sm'>
             we build scalable, cutting-edge tech solutions that ensure your
             systems grow with your business for long-term performance and
             adaptability.
@@ -55,7 +55,7 @@ export const StrengthsBlock = () => {
             {techDomains.map((domain, index) => (
               <li key={index} className='flex items-center mr-2'>
                 <ListIcon className='mr-1' />
-                <span className='text-neutral-700 text-sm'>{domain}</span>
+                <span className='text-neutral-500 text-sm'>{domain}</span>
               </li>
             ))}
           </ul>
