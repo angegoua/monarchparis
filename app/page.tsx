@@ -3,10 +3,11 @@ import { Button } from './components/Button'
 import logo from './logo.svg'
 import { ShowcaseProject } from './components/showcase-project'
 import { StrengthsBlock } from './components/strenghts'
+import { WhyUsBlock } from './components/why-us'
 
 export default function Home() {
   return (
-    <main>
+    <main className='max-w-4xl mx-auto'>
       <section className='min-h-screen flex flex-col justify-center mb-xl max-w-2xl mx-auto gap-24 pb-36'>
         <Image src={logo} width={30} height={30} alt="Studio's logo" />
         <div className='max-w-lg'>
@@ -24,7 +25,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id='works' className='max-w-4xl mx-auto'>
+      <section id='works'>
         <div className='flex flex-col gap-8 mb-32'>
           {Array.from({ length: 2 }).map((_, index) => (
             <ShowcaseProject key={index} />
@@ -45,6 +46,10 @@ export default function Home() {
       </section>
       <section className='max-w-2xl mx-auto py-64 min-h-screen'>
         <StrengthsBlock />
+      </section>
+
+      <section className='max-w-2xl mx-auto py-64 min-h-[2vh]'>
+        <WhyUsBlock />
       </section>
     </main>
   )
