@@ -2,18 +2,19 @@ import Image from 'next/image'
 import { Button } from './components/Button'
 import logo from './logo.svg'
 import { ShowcaseProject } from './components/showcase-project'
+import { StrengthsBlock } from './components/strenghts'
 
 export default function Home() {
   return (
     <main>
-      <section className='min-h-screen flex flex-col justify-center mb-xl max-w-lg mx-auto gap-24 pb-36'>
+      <section className='min-h-screen flex flex-col justify-center mb-xl max-w-2xl mx-auto gap-24 pb-36'>
         <Image src={logo} width={30} height={30} alt="Studio's logo" />
-        <div>
-          <h1 className='text-3xl font-display leading-tight text-neutral-400'>
+        <div className='max-w-lg'>
+          <h1 className='text-3xl font-display leading-tight text-neutral-400 font-medium'>
             We help founders and early-stage startup crafting{' '}
             <span className='text-black'>irresistible</span> products
           </h1>
-          <p className='my-6  max-w-md'>
+          <p className='my-6 text-neutral-700 max-w-md'>
             From clarify your strategy, to develivering memorables digital
             experiences that activate and retain your users.
           </p>
@@ -41,6 +42,9 @@ export default function Home() {
             <ShowcaseProject key={index} />
           ))}
         </div>
+      </section>
+      <section className='max-w-2xl mx-auto py-64 min-h-screen'>
+        <StrengthsBlock />
       </section>
     </main>
   )

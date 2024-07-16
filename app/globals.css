@@ -27,4 +27,7 @@ body {
 
 .font-display {
   @apply tracking-[-.055em];
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: never;
 }
