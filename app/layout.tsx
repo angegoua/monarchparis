@@ -19,7 +19,7 @@ const instrument = Instrument_Serif({
 
 export const metadata: Metadata = {
   title:
-    'Monarch Studio - Crafting irresistible digital experiences for founders and startups',
+    'Monarch Paris - Crafting irresistible digital experiences for founders and startups',
   description:
     'We are a digital product partner that crafts irresistible digital experiences for founders and startups. We help you build your product from idea to launch.',
 }
