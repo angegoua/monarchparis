@@ -7,10 +7,15 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    colors: {
-      silver: '#F3F3F3',
+    extend: {
+      colors: {
+        orange: '#FF6A06',
+        silver: '#F3F3F3',
+      },
     },
+
     fontFamily: {
+      display: ['var(--font-satoshi)'],
       sans: ['var(--font-satoshi)'],
       serif: ['var(--font-instrument)'],
     },

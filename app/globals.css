@@ -15,6 +15,9 @@
     --background-end-rgb: 0, 0, 0;
   }
 } */
+body {
+  background-color: white;
+}
 
 @layer utilities {
   .text-balance {
@@ -22,6 +25,6 @@
   }
 }
 
-.font-sans {
-  @apply tracking-[-2.5px];
+.font-display {
+  @apply tracking-[-.055em];
 }
