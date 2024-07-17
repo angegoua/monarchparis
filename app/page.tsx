@@ -34,12 +34,10 @@ export default function Home() {
 
       <section id='works'>
         <div className='flex flex-col gap-8 mb-32'>
-          {Array.from({ length: 2 }).map((_, index) => (
-            <ShowcaseProject key={index} />
-          ))}
+          <ShowcaseProject />
         </div>
 
-        <div className='flex flex-col gap-8 mb-16'>
+        {/* <div className='flex flex-col gap-8 mb-16'>
           {Array.from({ length: 3 }).map((_, index) => (
             <ShowcaseProject key={index} />
           ))}
@@ -49,7 +47,7 @@ export default function Home() {
           {Array.from({ length: 1 }).map((_, index) => (
             <ShowcaseProject key={index} />
           ))}
-        </div>
+        </div> */}
       </section>
       <section className='max-w-2xl mx-auto py-64 min-h-screen'>
         <StrengthsBlock />

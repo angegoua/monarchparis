@@ -41,19 +41,22 @@ export default function RootLayout({
       <body
         className={`${satoshi.variable} ${instrument.variable} font-sans text-black`}
       >
-        <p className='fixed bottom-8 left-8 font-medium font-display text-neutral-400'>
-          Led by{' '}
-          <Link
-            className='underline'
-            target='_blank'
-            href='https://x.com/angegoua_'
-          >
-            @ange
-          </Link>
-        </p>
-        <p className='fixed bottom-8 right-8 font-medium font-display text-neutral-400'>
-          from paris • {parisTime}
-        </p>
+        <div className='md:block hidden'>
+          <p className='fixed bottom-8 left-8 font-medium font-display text-neutral-400'>
+            Led by{' '}
+            <Link
+              className='underline'
+              target='_blank'
+              href='https://x.com/angegoua_'
+            >
+              @ange
+            </Link>
+          </p>
+          <p className='fixed bottom-8 right-8 font-medium font-display text-neutral-400'>
+            from paris • {parisTime}
+          </p>
+        </div>
+
         {children}
       </body>
     </html>
