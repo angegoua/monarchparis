@@ -22,11 +22,11 @@ export const StrengthsBlock = () => {
 
   return (
     <>
-      <h2 className='text-2xl font-display mb-12 font-medium'>
+      <h2 className='text-2xl font-display mb-16 md:mb-12 font-medium'>
         <span className='text-neutral-400 '>our signature</span> strengths
       </h2>
-      <div className='flex justify-between gap-8'>
-        <div className='w-1/2'>
+      <div className='flex justify-between flex-col gap-12 md:flex-row md:gap-8'>
+        <div className='w-full md:w-1/2'>
           <HeaderIcon className='block' />
           <h3 className='text-lg font-display font-medium mt-2 mb-4'>design</h3>
           <p className='text-neutral-700 text-sm'>
@@ -42,7 +42,7 @@ export const StrengthsBlock = () => {
             ))}
           </ul>
         </div>
-        <div className='w-1/2'>
+        <div className='w-full md:w-1/2'>
           <HeaderIcon className='block' />
           <h3 className='text-lg font-display font-medium mt-2 mb-4'>
             technology

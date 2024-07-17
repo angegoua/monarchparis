@@ -14,7 +14,7 @@ import {
 
 export default function Home() {
   return (
-    <main className='max-w-4xl mx-auto'>
+    <main className='px-8 md:p-0 max-w-4xl mx-auto mb-24'>
       <section className='min-h-screen flex flex-col justify-center mb-xl max-w-lg mx-auto gap-24 pb-36'>
         <Image src={logo} width={30} height={30} alt="Studio's logo" />
         <div className='max-w-lg'>
@@ -63,17 +63,17 @@ export default function Home() {
         <h2 className='text-2xl font-display mb-12 font-medium'>
           <span className='text-neutral-400 '>à la</span> carte
         </h2>
-        <div className='bg-neutral-900 rounded-xl border border-neutral-500 min-h-40 p-4'>
-          <div className='bg-neutral-800 rounded-lg text-white p-10 border border-neutral-700'>
-            <h2 className='font-display font-medium text-2xl'>
+        <div className='bg-neutral-900 rounded-xl border border-neutral-500 min-h-40 md:p-4 p-2 shadow-xl'>
+          <div className='bg-neutral-800 rounded-lg text-white p-4 md:p-10 border border-neutral-700'>
+            <h2 className='font-display font-medium text-xl md:text-2xl'>
               From zero to one
             </h2>
             <p className='text-white/50'>Sprint to launch your MVP in days</p>
-            <p className='font-display font-medium text-2xl mt-6'>
+            <p className='font-display font-medium text-xl md:text-2xl  mt-6'>
               From idea to production ready mobile/web app or SaaS. Everything
               you need to bring it to life.
             </p>
-            <div className='mt-6 flex justify-between items-end'>
+            <div className='mt-6 flex flex-col gap-8 md:gap-0 md:flex-row justify-between md:items-end'>
               <p className='text-white/50'>
                 Starting at{' '}
                 <span className='text-white font-display font-medium text-2xl block'>
@@ -88,8 +88,8 @@ export default function Home() {
             </div>
           </div>
 
-          <div className='text-white/50 p-10 pb-8'>
-            <ul className='grid-cols-2 grid gap-2'>
+          <div className='text-white/50 p-4 md:p-10 pb-8'>
+            <ul className='grid-cols-1 md:grid-cols-2 grid gap-2'>
               {mvpOffer.map((item, index) => (
                 <li className='flex items-center' key={index}>
                   <ListIcon className='mr-1 fill-white/50' />
@@ -108,7 +108,7 @@ export default function Home() {
         <Accordion
           type='single'
           collapsible
-          className='w-full flex flex-col gap-2'
+          className='w-full flex flex-col gap-2 text-left'
         >
           <AccordionItem value='item-1'>
             <AccordionTrigger>
