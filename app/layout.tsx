@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Instrument_Serif } from 'next/font/google'
 import localFont from 'next/font/local'
 import './globals.css'
+import Link from 'next/link'
 
 const satoshi = localFont({
   src: './satoshi.woff2',
@@ -29,11 +30,30 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
+  const parisTime = new Date().toLocaleString('en-US', {
+    timeZone: 'Europe/Paris',
+    hour: 'numeric',
+    minute: 'numeric',
+  })
+
   return (
     <html lang='en'>
       <body
         className={`${satoshi.variable} ${instrument.variable} font-sans text-black`}
       >
+        <p className='fixed bottom-8 left-8 font-medium font-display text-neutral-400'>
+          Led by{' '}
+          <Link
+            className='underline'
+            target='_blank'
+            href='https://x.com/angegoua_'
+          >
+            @ange
+          </Link>
+        </p>
+        <p className='fixed bottom-8 right-8 font-medium font-display text-neutral-400'>
+          from paris • {parisTime}
+        </p>
         {children}
       </body>
     </html>
