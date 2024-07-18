@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import { Instrument_Serif } from 'next/font/google'
 import localFont from 'next/font/local'
 import './globals.css'
 import Link from 'next/link'
@@ -8,14 +7,6 @@ const satoshi = localFont({
   src: './satoshi.woff2',
   display: 'swap',
   variable: '--font-satoshi',
-})
-
-const instrument = Instrument_Serif({
-  weight: '400',
-  subsets: ['latin'],
-  display: 'swap',
-  style: 'italic',
-  variable: '--font-instrument',
 })
 
 export const metadata: Metadata = {
@@ -38,9 +29,7 @@ export default function RootLayout({
 
   return (
     <html lang='en'>
-      <body
-        className={`${satoshi.variable} ${instrument.variable} font-sans text-black`}
-      >
+      <body className={`${satoshi.variable} font-sans text-black`}>
         <div className='md:block hidden'>
           <p className='fixed bottom-8 left-8 font-medium font-display text-neutral-400'>
             Led by{' '}

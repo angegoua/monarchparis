@@ -21,7 +21,6 @@ const config = {
       fontFamily: {
         display: ['var(--font-satoshi)'],
         sans: ['var(--font-satoshi)'],
-        serif: ['var(--font-instrument)'],
       },
       colors: {
         border: 'hsl(var(--border))',
