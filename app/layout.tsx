@@ -46,6 +46,19 @@ export default function RootLayout({
         </div>
 
         {children}
+
+        <section className='bg-gray-100 w-full h-32 mt-24 '>
+          <div className='max-w-2xl mx-auto h-full flex flex-col  justify-center gap-4 px-4 '>
+            <p className='text-neutral-500 text-sm'>
+              © 2024 Monarch Paris. All rights reserved.
+            </p>
+            <p className='text-neutral-500 text-sm'>
+              <Link href='mailto:ange@monarchieparis.com'>
+                <span className='underline'>ange@monarchieparis.com</span>
+              </Link>
+            </p>
+          </div>
+        </section>
       </body>
     </html>
   )
