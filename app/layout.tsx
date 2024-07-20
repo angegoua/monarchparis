@@ -31,7 +31,7 @@ export default function RootLayout({
       <body className={`${inter.variable} font-sans text-black`}>
         <div className='md:block hidden'>
           <p className='fixed bottom-8 left-8 font-medium font-display text-neutral-400'>
-            Led by{' '}
+            led by{' '}
             <Link
               className='underline'
               target='_blank'

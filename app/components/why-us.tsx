@@ -98,23 +98,21 @@ export const WhyUsBlock = () => {
     ],
     [
       {
-        text: "Remember when your creative and dev team felt like true partners, focused on your success? Those days of genuine collaboration have vanished, replaced by cookie-cutter code farms and agencies that vanish once they're paid. Endless delays, unanswered emails, and half-baked MVPs have become the norm.",
+        text: "It's been a time, your creative and dev team felt like true partners, focused on your success. Those days of genuine collaboration have vanished, replaced by agency focus only on their profit. Endless delays, unanswered emails, and half-baked MVPs have become the norm. I'm speeking from experience.",
       },
     ],
     [{ text: "But it doesn't have to be this way." }],
     [
       {
-        text: "Imagine working with a team of top notch engineers, best-in-class designers, UX wizards, and growth hackers as invested in your app's success as you are. We're not just moving pixels and writing code – we're crafting user-centric, strategic and lovable digital experiences.",
+        text: "Monarch Paris is a small team of builders and growth hackers invested in your project's success as you are because we know what it means to you. We're not just moving pixels and writing code – we're crafting user-centric, strategic and lovable digital experiences for your dear users.",
       },
     ],
-    [{ text: 'Need a quick and efficient MVP?' }],
-    [{ text: "We've got you covered from zero to one and beyond." }],
     [
       {
-        text: 'Want to implement cutting-edge features, or need creatives to answer all your product design requests?',
+        text: 'One goal : bringing your idea to life quick and give you the best bag for a successful marathon.',
       },
     ],
-    [{ text: 'Easy peasy.' }],
+    [{ text: "We've got you covered from zero to one and beyond." }],
     [
       {
         text: "We speak fluent business, translating your vision into a strategy that'll have investors salivating and users coming back for more.",
