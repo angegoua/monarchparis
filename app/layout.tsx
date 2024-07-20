@@ -34,8 +34,8 @@ export default function RootLayout({
           <p className='fixed z-10 bottom-8 left-8 font-medium font-display text-neutral-400'>
             led by{' '}
             <Link
-              className='underline'
               target='_blank'
+              className='underline'
               href='https://x.com/angegoua_'
             >
               @ange
@@ -54,7 +54,7 @@ export default function RootLayout({
               © 2024 Monarch Paris. All rights reserved.
             </p>
             <p className='text-neutral-500 text-sm'>
-              <Link href='mailto:ange@monarchieparis.com'>
+              <Link target='_blank' href='mailto:ange@monarchieparis.com'>
                 <span className='underline'>ange@monarchieparis.com</span>
               </Link>
             </p>

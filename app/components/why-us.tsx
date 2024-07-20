@@ -63,7 +63,10 @@ const Word = ({
   const content = (
     <>
       <span style={{ opacity: 0.2, visibility: 'hidden' }}>{children}</span>
-      <motion.span style={{ opacity, position: 'absolute', left: 0, top: 0 }}>
+      <motion.span
+        className={isLink && href ? 'text-black' : ''}
+        style={{ opacity, position: 'absolute', left: 0, top: 0 }}
+      >
         {children}
       </motion.span>
       <span style={{ opacity: 0.2, position: 'absolute', left: 0, top: 0 }}>
@@ -76,12 +79,12 @@ const Word = ({
     <span
       ref={container}
       className='relative'
-      style={{ display: 'inline-block', marginRight: '0.25em' }}
+      style={{ display: 'inline-block', paddingRight: '0.25em' }}
     >
       {isLink && href ? (
-        <a href={href} className='hover:underline'>
+        <Link target='_blank' href={href}>
           {content}
-        </a>
+        </Link>
       ) : (
         content
       )}
@@ -109,7 +112,7 @@ export const WhyUsBlock = () => {
     ],
     [
       {
-        text: 'One goal : bringing your idea to life quick and give you the best bag for a successful marathon.',
+        text: 'One goal : bringing your idea to life quick and give you the best bag for a joyful trip.',
       },
     ],
     [{ text: "We've got you covered from zero to one and beyond." }],
@@ -120,9 +123,9 @@ export const WhyUsBlock = () => {
     ],
     [
       {
-        text: "So, let's talk about your project ↘",
+        text: "So, let's talk about your project ↗",
         isLink: true,
-        href: '#',
+        href: 'https://cal.com/ange-monarchparis/discovery',
       },
     ],
   ]

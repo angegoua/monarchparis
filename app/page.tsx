@@ -23,7 +23,10 @@ export default function Home() {
             experiences that activate and retain your users.
           </p>
           <div>
-            <Link href='https://cal.com/ange-monarchparis/discovery'>
+            <Link
+              target='_blank'
+              href='https://cal.com/ange-monarchparis/discovery'
+            >
               <Button variant='secondary'>
                 Let&apos;s talk about your project
               </Button>
@@ -37,7 +40,7 @@ export default function Home() {
           <ShowcaseProject />
         </div>
       </section>
-      <section className='max-w-2xl mx-auto py-64 min-h-screen'>
+      <section className='max-w-2xl mx-auto py-32 md:py-64 md:min-h-screen'>
         <StrengthsBlock />
       </section>
 
@@ -67,9 +70,14 @@ export default function Home() {
                 </span>
               </p> */}
               <div>
-                <Button variant='primary'>
-                  Let&apos;s talk about your project
-                </Button>
+                <Link
+                  target='_blank'
+                  href='https://cal.com/ange-monarchparis/discovery'
+                >
+                  <Button variant='primary'>
+                    Let&apos;s talk about your project
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
