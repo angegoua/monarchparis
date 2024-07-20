@@ -6,6 +6,7 @@ import { StrengthsBlock } from './components/strenghts'
 import { WhyUsBlock } from './components/why-us'
 import { ListIcon } from './components/list-icon'
 import { Faq } from './components/faq'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -22,7 +23,11 @@ export default function Home() {
             experiences that activate and retain your users.
           </p>
           <div>
-            <Button variant='secondary'>Get in touch</Button>
+            <Link href='https://cal.com/ange-monarchparis/discovery'>
+              <Button variant='secondary'>
+                Let&apos;s talk about your project
+              </Button>
+            </Link>
           </div>
         </div>
       </section>

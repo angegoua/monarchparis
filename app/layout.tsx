@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import Link from 'next/link'
+import { ProgressiveBlur } from './components/progressive-blur'
 
 const inter = Inter({
   variable: '--font-inter',
@@ -30,7 +31,7 @@ export default function RootLayout({
     <html lang='en'>
       <body className={`${inter.variable} font-sans text-black`}>
         <div className='md:block hidden'>
-          <p className='fixed bottom-8 left-8 font-medium font-display text-neutral-400'>
+          <p className='fixed z-10 bottom-8 left-8 font-medium font-display text-neutral-400'>
             led by{' '}
             <Link
               className='underline'
@@ -40,15 +41,15 @@ export default function RootLayout({
               @ange
             </Link>
           </p>
-          <p className='fixed bottom-8 right-8 font-medium font-display text-neutral-400'>
+          <p className='fixed z-10 bottom-8 right-8 font-medium font-display text-neutral-400'>
             from paris • {parisTime}
           </p>
         </div>
-
         {children}
-
+        {/* make a progressive transparent blur fixed a the bottom of the screen */}
+        <ProgressiveBlur />
         <section className='bg-gray-100 w-full h-32 mt-24 '>
-          <div className='max-w-2xl mx-auto h-full flex flex-col  justify-center gap-4 px-4 '>
+          <div className='max-w-2xl mx-auto h-full flex flex-col md:flex-row items-center justify-center gap-4 px-4 '>
             <p className='text-neutral-500 text-sm'>
               © 2024 Monarch Paris. All rights reserved.
             </p>
