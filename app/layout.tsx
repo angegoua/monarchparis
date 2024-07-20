@@ -1,12 +1,11 @@
 import type { Metadata } from 'next'
-import localFont from 'next/font/local'
+import { Inter } from 'next/font/google'
 import './globals.css'
 import Link from 'next/link'
 
-const satoshi = localFont({
-  src: './satoshi.woff2',
-  display: 'swap',
-  variable: '--font-satoshi',
+const inter = Inter({
+  variable: '--font-inter',
+  subsets: ['latin'],
 })
 
 export const metadata: Metadata = {
@@ -29,7 +28,7 @@ export default function RootLayout({
 
   return (
     <html lang='en'>
-      <body className={`${satoshi.variable} font-sans text-black`}>
+      <body className={`${inter.variable} font-sans text-black`}>
         <div className='md:block hidden'>
           <p className='fixed bottom-8 left-8 font-medium font-display text-neutral-400'>
             Led by{' '}
