@@ -29,7 +29,7 @@ export default function RootLayout({
 
   return (
     <html lang='en'>
-      <body className={`${inter.variable} font-sans text-black min-h-screen`}>
+      <body className={`${inter.variable} font-sans text-black`}>
         <div className='md:block hidden'>
           <p className='fixed z-10 bottom-8 left-8 font-medium font-display text-neutral-400'>
             led by{' '}
@@ -44,9 +44,9 @@ export default function RootLayout({
           <p className='fixed z-10 bottom-8 right-8 font-medium font-display text-neutral-400'>
             from paris • {parisTime}
           </p>
-
-          {children}
         </div>
+
+        <div className='min-h-screen'>{children}</div>
         {/* make a progressive transparent blur fixed a the bottom of the screen */}
         <ProgressiveBlur />
         <section className='bg-gray-100 w-full h-32 mt-24 '>
