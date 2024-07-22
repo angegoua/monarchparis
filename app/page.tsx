@@ -7,8 +7,11 @@ import { WhyUsBlock } from './components/why-us'
 import { ListIcon } from './components/list-icon'
 import { Faq } from './components/faq'
 import Link from 'next/link'
+import { getAllProjects } from '@/lib/projects'
+import { X } from 'lucide-react'
 
 export default function Home() {
+  const projects = getAllProjects()
   return (
     <main className='px-4 md:p-0 max-w-4xl mx-auto mb-24'>
       <section className='min-h-screen flex flex-col justify-center mb-xl max-w-lg mx-auto gap-24 pb-36'>
@@ -36,11 +39,13 @@ export default function Home() {
       </section>
 
       <section id='works'>
-        <div className='flex flex-col gap-8 mb-32'>
-          <ShowcaseProject />
+        <div className='flex flex-col gap-8 mb-32  md:min-h-[50vh]'>
+          {projects.map((project) => (
+            <ShowcaseProject key={project.id} project={project} />
+          ))}
         </div>
       </section>
-      <section className='max-w-2xl mx-auto py-32 md:py-64 md:min-h-screen'>
+      <section className='max-w-2xl mx-auto py-32 md:py-64 md:min-h-[50vh]'>
         <StrengthsBlock />
       </section>
 

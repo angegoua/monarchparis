@@ -4,12 +4,21 @@ import React from 'react'
 interface ButtonProps {
   children: React.ReactNode
   variant: 'primary' | 'secondary'
+  className?: string
+  onClick?: () => void
 }
 
-export const Button = ({ children, variant }: ButtonProps) => {
+export const Button = ({
+  children,
+  variant,
+  className,
+  onClick,
+}: ButtonProps) => {
   return (
     <button
+      onClick={onClick}
       className={clsx(
+        className,
         'py-2 px-6 relative font-medium font-display',
         variant === 'primary' &&
           'text-black  bg-gradient-to-b from-white to-[#E1E1E1] rounded-full hover:bg-gradient-to-t transition-all duration-300',
