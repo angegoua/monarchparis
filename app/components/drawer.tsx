@@ -22,6 +22,7 @@ export const Drawer = ({
         <div className='h-screen w-screen fixed inset-0 z-40 pt-48 overflow-scroll bg-gray-50'>
           <div className='z-50 p-2 max-w-2xl mx-auto fixed top-0 left-[50%] -translate-x-[50%] w-full flex justify-center'>
             <motion.div
+              key={project.id}
               className='w-full'
               initial={{ y: '-300%' }}
               animate={{ y: 0 }}
@@ -55,7 +56,7 @@ export const Drawer = ({
               opacity: 1,
             }}
             exit={{ y: '100px', opacity: 0 }}
-            transition={{ duration: 0.2, ease: 'easeInOut' }}
+            transition={{ duration: 0.3, ease: 'easeInOut' }}
           >
             <div className='max-w-6xl mx-auto px-4 md:p-0 mb-32'>
               <div className='max-w-2xl mx-auto'>
