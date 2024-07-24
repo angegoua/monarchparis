@@ -41,7 +41,7 @@ export const Drawer = ({
                 <Button
                   onClick={() => setIsOpen(false)}
                   variant='secondary'
-                  className='text-neutral-500 flex justify-center items-center h-10 w-10 px-2 py-2 rounded-full'
+                  className='text-neutral-500 flex justify-center items-center h-10 w-10 px-1 py-1 rounded-full'
                 >
                   <X size={24} />
                 </Button>
