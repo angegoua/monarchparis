@@ -30,6 +30,9 @@ export default function RootLayout({
 
   return (
     <html lang='en'>
+      <head>
+        <script async src='https://cdn.seline.so/seline.js'></script>
+      </head>
       <DrawerProvider>
         <body className={`${inter.variable} font-sans text-black`}>
           <div className='md:block hidden'>
