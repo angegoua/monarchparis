@@ -31,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <head>
-        <script async src='https://cdn.seline.so/seline.js'></script>
+        <script async src="https://cdn.seline.so/seline.js" data-token="eb03d5d7c6517ae"></script>
       </head>
       <DrawerProvider>
         <body className={`${inter.variable} font-sans text-black`}>
