@@ -1,5 +1,5 @@
 import React from 'react'
-import ReviewsClient from './client'
+import AdminReviewsClient from './client'
 import prisma from '@/lib/prisma'
 
 // Indiquer à Next.js de ne pas pré-rendre cette page côté serveur lors du build
@@ -35,12 +35,13 @@ async function getReviews() {
   }
 }
 
-export default async function ReviewsPage() {
+export default async function AdminReviewsPage() {
   const reviews = await getReviews()
 
   return (
-    <main className='px-4 md:p-0 max-w-4xl mx-auto'>
-      <ReviewsClient initialReviews={reviews} />
+    <main className='px-4 md:p-0 max-w-6xl mx-auto py-8'>
+      <h1 className='text-2xl font-bold mb-6'>Reviews Administration</h1>
+      <AdminReviewsClient initialReviews={reviews} />
     </main>
   )
 }

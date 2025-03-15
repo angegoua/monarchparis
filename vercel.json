@@ -1,0 +1,14 @@
+{
+  "buildCommand": "next build",
+  "framework": "nextjs",
+  "outputDirectory": ".next",
+  "regions": ["fra1"],
+  "env": {
+    "NEXT_PUBLIC_VERCEL_ENV": "production"
+  },
+  "build": {
+    "env": {
+      "NEXT_PUBLIC_VERCEL_ENV": "production"
+    }
+  }
+}

@@ -6,8 +6,19 @@ import { PrismaClient } from '@prisma/client'
 
 const globalForPrisma = global as unknown as { prisma: PrismaClient }
 
-export const prisma = globalForPrisma.prisma || new PrismaClient()
+// Vérifier si nous sommes en phase de build sur Vercel
+const isBuildPhase =
+  process.env.VERCEL_ENV === 'production' && process.env.NEXT_PHASE === 'build'
 
+// Créer un client Prisma avec des options de connexion adaptées
+export const prisma =
+  globalForPrisma.prisma ||
+  new PrismaClient({
+    log: ['query', 'error', 'warn'],
+    errorFormat: 'pretty',
+  })
+
+// Garder une seule instance de Prisma Client en développement
 if (process.env.NODE_ENV !== 'production') globalForPrisma.prisma = prisma
 
 export default prisma
