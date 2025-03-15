@@ -4,6 +4,7 @@ import './globals.css'
 import Link from 'next/link'
 import { ProgressiveBlur } from './components/progressive-blur'
 import { DrawerProvider } from '@/lib/drawer-context'
+import { Navigation } from './components/Navigation'
 
 const inter = Inter({
   variable: '--font-inter',
@@ -31,7 +32,11 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <head>
-        <script async src="https://cdn.seline.so/seline.js" data-token="eb03d5d7c6517ae"></script>
+        <script
+          async
+          src='https://cdn.seline.so/seline.js'
+          data-token='eb03d5d7c6517ae'
+        ></script>
       </head>
       <DrawerProvider>
         <body className={`${inter.variable} font-sans text-black`}>
@@ -60,8 +65,8 @@ export default function RootLayout({
                 © 2024 Monarch Paris. All rights reserved.
               </p>
               <p className='text-neutral-500 text-sm'>
-                <Link target='_blank' href='mailto:ange@monarchieparis.com'>
-                  <span className='underline'>ange@monarchieparis.com</span>
+                <Link target='_blank' href='mailto:ange@monarchparis.com'>
+                  <span className='underline'>ange@monarchparis.com</span>
                 </Link>
               </p>
             </div>

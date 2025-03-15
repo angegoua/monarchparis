@@ -6,6 +6,7 @@ interface ButtonProps {
   variant: 'primary' | 'secondary'
   className?: string
   onClick?: () => void
+  type?: 'button' | 'submit' | 'reset'
 }
 
 export const Button = ({
@@ -13,9 +14,11 @@ export const Button = ({
   variant,
   className,
   onClick,
+  type = 'button',
 }: ButtonProps) => {
   return (
     <button
+      type={type}
       onClick={onClick}
       className={clsx(
         className,

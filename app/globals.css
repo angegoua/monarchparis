@@ -80,3 +80,7 @@
   -moz-osx-font-smoothing: grayscale;
   font-smooth: never;
 }
+
+* {
+  font-family: 'system-ui', sans-serif;
+}

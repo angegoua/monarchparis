@@ -1,7 +1,7 @@
 'use client'
 import { Project } from '@/lib/projects'
 import { AnimatePresence, motion } from 'framer-motion'
-import { X } from 'lucide-react'
+import { XIcon } from 'lucide-react'
 import { Button } from './Button'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -41,9 +41,9 @@ export const Drawer = ({
                 <Button
                   onClick={() => setIsOpen(false)}
                   variant='secondary'
-                  className='text-neutral-500 flex justify-center items-center h-10 w-10 px-1 py-1 rounded-full'
+                  className='flex justify-center items-center h-10 py-1 px-1 rounded-full'
                 >
-                  <X size={24} />
+                  <XIcon size={24} />
                 </Button>
               </div>
             </motion.div>
